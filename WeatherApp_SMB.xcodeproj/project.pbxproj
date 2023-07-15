@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		069A309D2A619E5600C3BED1 /* GeocoderAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069A309C2A619E5600C3BED1 /* GeocoderAPIClient.swift */; };
+		069A30A02A61C71200C3BED1 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069A309F2A61C71200C3BED1 /* Cache.swift */; };
 		06B97ADA2A5D9667009399F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B97AD92A5D9667009399F4 /* AppDelegate.swift */; };
 		06B97ADC2A5D9667009399F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B97ADB2A5D9667009399F4 /* SceneDelegate.swift */; };
 		06B97ADE2A5D9667009399F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B97ADD2A5D9667009399F4 /* ViewController.swift */; };
 		06B97AE12A5D9667009399F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06B97ADF2A5D9667009399F4 /* Main.storyboard */; };
 		06B97AE32A5D9673009399F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06B97AE22A5D9673009399F4 /* Assets.xcassets */; };
 		06B97AE62A5D9673009399F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06B97AE42A5D9673009399F4 /* LaunchScreen.storyboard */; };
+		06B97AEF2A5DA62E009399F4 /* WeatherAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B97AEE2A5DA62E009399F4 /* WeatherAPIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		069A309C2A619E5600C3BED1 /* GeocoderAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocoderAPIClient.swift; sourceTree = "<group>"; };
+		069A309F2A61C71200C3BED1 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 		06B97AD62A5D9667009399F4 /* WeatherApp_SMB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp_SMB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06B97AD92A5D9667009399F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06B97ADB2A5D9667009399F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		06B97AE22A5D9673009399F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06B97AE52A5D9673009399F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		06B97AE72A5D9673009399F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06B97AEE2A5DA62E009399F4 /* WeatherAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 				06B97AE22A5D9673009399F4 /* Assets.xcassets */,
 				06B97AE42A5D9673009399F4 /* LaunchScreen.storyboard */,
 				06B97AE72A5D9673009399F4 /* Info.plist */,
+				06B97AEE2A5DA62E009399F4 /* WeatherAPIClient.swift */,
+				069A309C2A619E5600C3BED1 /* GeocoderAPIClient.swift */,
+				069A309F2A61C71200C3BED1 /* Cache.swift */,
 			);
 			path = WeatherApp_SMB;
 			sourceTree = "<group>";
@@ -139,7 +148,10 @@
 			files = (
 				06B97ADE2A5D9667009399F4 /* ViewController.swift in Sources */,
 				06B97ADA2A5D9667009399F4 /* AppDelegate.swift in Sources */,
+				06B97AEF2A5DA62E009399F4 /* WeatherAPIClient.swift in Sources */,
 				06B97ADC2A5D9667009399F4 /* SceneDelegate.swift in Sources */,
+				069A30A02A61C71200C3BED1 /* Cache.swift in Sources */,
+				069A309D2A619E5600C3BED1 /* GeocoderAPIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +308,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "SamuelBoyce.WeatherApp-SMB";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +327,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "SamuelBoyce.WeatherApp-SMB";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
